@@ -9,7 +9,7 @@ class NavBar extends Component {
         <div className="brand">{/* <h1>Vero</h1> */}</div>
         <ul className="nav-links">
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/home">Homes</Link>
           </li>
           <li>
             <Link to="/services">Services</Link>
