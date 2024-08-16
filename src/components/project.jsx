@@ -14,12 +14,12 @@ function Project() {
         </p>
         <p className="technologies">Next.js, Tailwind.css</p>
         <div className="work-links">
-          <a href="#" className="external-link">
+          {/* <a className="external-link">
             <i className="fas fa-arrow-right"></i>
           </a>
-          <a href="#" className="github-link">
+          <a className="github-link">
             <i className="fab fa-github"></i>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="work-image">
