@@ -31,14 +31,13 @@
 
 .nav-links a:hover {
   color: #00ff00;
-  /* text-decoration: underline; */
   text-underline-offset: 6px;
 }
 
 .contact-button {
   background-color: #00ff00;
   color: #1b1c1e;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;

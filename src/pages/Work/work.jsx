@@ -3,53 +3,51 @@ import "./work.css";
 import Project from "../../components/project";
 import projectsdata from "../../data/data";
 
-function App() {
-  const [activeTab, setActiveTab] = useState("All");
-
-  const changeTab = (tab) => {
-    setActiveTab(tab);
-  };
+function Work() {
+  const [activeSection, setActiveSection] = useState("All");
 
   const filteredProjects =
-    activeTab === "All"
+    activeSection === "All"
       ? projectsdata
-      : projectsdata.filter((project) => project.category === activeTab);
+      : projectsdata.filter((project) => project.category === activeSection);
+
+  const renderContent = () => {
+    return filteredProjects.map((project) => (
+      <Project key={project.id} project={project} />
+    ));
+  };
 
   return (
-    <div>
-      <nav>
+    <div className="work-container">
+      <div className="left-menu">
         <button
-          onClick={() => changeTab("All")}
-          className={activeTab === "All" ? "active" : ""}
+          onClick={() => setActiveSection("All")}
+          className={activeSection === "All" ? "active" : ""}
         >
           All
         </button>
         <button
-          onClick={() => changeTab("Web")}
-          className={activeTab === "Web" ? "active" : ""}
+          onClick={() => setActiveSection("Web")}
+          className={activeSection === "Web" ? "active" : ""}
         >
           Web
         </button>
         <button
-          onClick={() => changeTab("App")}
-          className={activeTab === "App" ? "active" : ""}
+          onClick={() => setActiveSection("App")}
+          className={activeSection === "App" ? "active" : ""}
         >
           App
         </button>
         <button
-          onClick={() => changeTab("Design")}
-          className={activeTab === "Design" ? "active" : ""}
+          onClick={() => setActiveSection("Design")}
+          className={activeSection === "Design" ? "active" : ""}
         >
           Design
         </button>
-      </nav>
-      <section>
-        {filteredProjects.map((project) => (
-          <Project key={project.id} project={project} />
-        ))}
-      </section>
+      </div>
+      <div className="right-content">{renderContent()}</div>
     </div>
   );
 }
 
-export default App;
+export default Work;

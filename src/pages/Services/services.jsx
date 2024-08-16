@@ -18,7 +18,6 @@ function Services() {
           <i className="fas fa-arrow-right"></i>
         </div>
       </div>
-
       <div className="service-item">
         <div className="service-number">02</div>
         <div className="service-content">
@@ -34,7 +33,6 @@ function Services() {
           <i className="fas fa-arrow-right"></i>
         </div>
       </div>
-
       <div className="service-item">
         <div className="service-number">03</div>
         <div className="service-content">
@@ -49,20 +47,6 @@ function Services() {
           <i className="fas fa-arrow-right"></i>
         </div>
       </div>
-
-      {/* <div className="service-item">
-        <div className="service-number">04</div>
-        <div className="service-content">
-          <h2>SEO</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sclerisque
-            consequat, faucibus et, et.
-          </p>
-        </div>
-        <div className="service-icon">
-          <i className="fas fa-arrow-right"></i>
-        </div>
-      </div> */}
     </div>
   );
 }

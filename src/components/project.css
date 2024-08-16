@@ -1,15 +1,19 @@
-.work-container {
+.project-container {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 20px;
   color: aliceblue;
+  border-radius: 5px;
+  gap: 40px;
+  background-color: #2d2d3a;
+  margin-bottom: 10px;
 }
 
-.work-details {
+.project-details {
   width: 50%;
 }
 
-.work-number-outline {
+.project-number-outline {
   font-family: "Fira Code", monospace;
   font-size: 4rem;
   color: transparent;

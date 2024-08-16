@@ -23,14 +23,6 @@ function Contact() {
             <input type="text" name="subject" placeholder="Subject" />
             <input type="text" name="phone number" placeholder="Phone Number" />
           </div>
-          {/* <div className="form-row">
-            <select>
-              <option>Select a service</option>
-              <option>Web Development</option>
-              <option>App Development</option>
-              <option>UI/UX Design</option>
-            </select>
-          </div> */}
           <textarea
             name="message"
             placeholder="Type your message here."

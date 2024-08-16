@@ -3,16 +3,20 @@ import "./project.css";
 
 function Project({ project }) {
   return (
-    <div className="work-container">
-      <div className="work-details">
-        <div className="work-number-outline"></div>
+    <div className="project-container">
+      <div className="project-details">
+        <div className="project-number-outline"></div>
         <h2>{project.title}</h2>
         <p>{project.description}</p>
         <p className="technologies">{project.technologies}</p>
-        <div className="work-links"></div>
+        <div className="work-links">
+          <a href={project.github_link}>
+            <i className="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
       <div className="work-image">
-        <img src={project.image} alt="Project Screenshot" />
+        <img src={project.image} alt="ProjectImage" />
       </div>
     </div>
   );

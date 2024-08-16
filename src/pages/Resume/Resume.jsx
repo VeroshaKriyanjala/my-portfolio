@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Skills from "../../components/skills";
 import "./Resume.css";
+import Education from "../../components/education";
 
 function Resume() {
   const [activeSection, setActiveSection] = useState("Skills");
@@ -10,13 +11,7 @@ function Resume() {
       case "Skills":
         return <Skills />;
       case "Education":
-        return (
-          <div>
-            <h2>My education</h2>
-            <p>Bachelor of Science in Computer Science - University Name</p>
-            <p>High School Diploma - High School Name</p>
-          </div>
-        );
+        return <Education />;
       case "AboutMe":
       default:
         return (

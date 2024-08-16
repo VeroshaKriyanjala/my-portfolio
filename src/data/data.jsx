@@ -17,7 +17,7 @@ const projectsdata = [
     description: `We are developing an app called "Mango Map," which serves as a platform for travelers to share their experiences and images from around the world. Mango Map allows users to document their journeys, connect with other travelers, and explore global destinations through shared stories and photos. This project showcases our commitment to creating a vibrant and interactive community for travel enthusiasts.`,
     technologies: "Flutter node.js MySQL",
     github_link: "#",
-    image: "../assets/images.jpeg",
+    image: "../assets/Location.png",
   },
   {
     id: 3,
