@@ -6,7 +6,9 @@ class NavBar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="brand">{/* <h1>Vero</h1> */}</div>
+        <div className="brand">
+          <h1>...</h1>
+        </div>
         <ul className="nav-links">
           <li>
             <Link to="/home">Homes</Link>
