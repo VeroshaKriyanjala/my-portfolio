@@ -1,0 +1,98 @@
+.work-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  color: aliceblue;
+}
+
+.work-details {
+  width: 50%;
+}
+
+.work-number-outline {
+  font-family: "Fira Code", monospace;
+  font-size: 4rem;
+  color: transparent;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000,
+    2px -2px 0 #000; /* Creates the outlined effect */
+  margin-bottom: 20px;
+}
+
+.work-details h2 {
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.work-details p {
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #aaaaaa;
+}
+
+.technologies {
+  color: #00ff99;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.work-links {
+  display: flex;
+  gap: 20px;
+}
+
+.work-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1b1c1e;
+  color: #00ff99;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.work-links a:hover {
+  background-color: #00ff99;
+  color: #1b1c1e;
+}
+
+.work-image {
+  width: 40%;
+  position: relative;
+}
+
+.work-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-controls button {
+  background-color: #00ff99;
+  border: none;
+  color: #1b1c1e;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: #1b1c1e;
+  color: #00ff99;
+}
