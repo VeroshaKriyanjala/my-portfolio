@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./work.css";
 import Project from "../../components/project";
+import projectsdata from "../../data/data";
 
 function App() {
   const [activeTab, setActiveTab] = useState("All");
@@ -8,6 +9,11 @@ function App() {
   const changeTab = (tab) => {
     setActiveTab(tab);
   };
+
+  const filteredProjects =
+    activeTab === "All"
+      ? projectsdata
+      : projectsdata.filter((project) => project.category === activeTab);
 
   return (
     <div>
@@ -38,32 +44,9 @@ function App() {
         </button>
       </nav>
       <section>
-        {activeTab === "All" && (
-          <div>
-            <Project />
-          </div>
-        )}
-        {activeTab === "Web" && (
-          <div>
-            <div>
-              <Project />
-            </div>
-          </div>
-        )}
-        {activeTab === "App" && (
-          <div>
-            <div>
-              <Project />
-            </div>
-          </div>
-        )}
-        {activeTab === "Design" && (
-          <div>
-            <div>
-              <Project />
-            </div>
-          </div>
-        )}
+        {filteredProjects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
       </section>
     </div>
   );

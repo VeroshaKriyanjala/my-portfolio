@@ -10,25 +10,34 @@ function Contact() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nescunt sit
           illo esse commodi.
         </p>
-        <form>
+        <form
+          action="https://send.pageclip.co/nQfJqWkJIOeVjd297F41qt8FBkAYBez7/contact-me"
+          class="pageclip-form"
+          method="post"
+        >
           <div className="form-row">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Your Email" />
           </div>
           <div className="form-row">
-            <input type="text" placeholder="Subject" />
-            <input type="text" placeholder="Phone Number" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <input type="text" name="phone number" placeholder="Phone Number" />
           </div>
-          <div className="form-row">
+          {/* <div className="form-row">
             <select>
               <option>Select a service</option>
               <option>Web Development</option>
               <option>App Development</option>
               <option>UI/UX Design</option>
             </select>
-          </div>
-          <textarea placeholder="Type your message here."></textarea>
-          <button type="submit">Send message</button>
+          </div> */}
+          <textarea
+            name="message"
+            placeholder="Type your message here."
+          ></textarea>
+          <button name="submit" class="pageclip-form__submit" type="submit">
+            Send message
+          </button>
         </form>
       </div>
       <div className="contact-info">

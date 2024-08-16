@@ -24,7 +24,7 @@
 .service-item:hover > .service-number,
 .service-item:hover > .service-content h2,
 .service-item:hover > .service-content p {
-  color: #00ff99;
+  color: #00ff00;
 }
 
 .service-number {
@@ -53,7 +53,7 @@
   margin-left: auto;
   font-size: 2rem;
   color: #ffffff;
-  background-color: #00ff99;
+  background-color: #00ff00;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -65,7 +65,7 @@
 }
 
 .service-icon.active {
-  background-color: #00ff99;
+  background-color: #00ff00;
   color: #1b1c1e;
 }
 
@@ -75,6 +75,6 @@
 
 .service-icon:hover {
   background-color: #1b1c1e;
-  color: #00ff99;
+  color: #00ff00;
   cursor: pointer;
 }

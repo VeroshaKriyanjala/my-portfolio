@@ -9,14 +9,23 @@ nav {
 button {
   margin: 5px;
   padding: 10px 15px;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  border: #00ff00 solid 2px;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: black;
+  border: #00ff00 solid 2px;
 }
 
 button.active {
-  background-color: #4caf50;
-  color: white;
+  background-color: transparent;
+  border: #00ff00 solid 2px;
+  color: #00ff00;
 }
 
 section {

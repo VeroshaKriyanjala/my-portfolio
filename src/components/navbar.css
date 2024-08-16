@@ -30,23 +30,42 @@
 }
 
 .nav-links a:hover {
-  color: #00ff99;
-  text-decoration: underline;
+  color: #00ff00;
+  /* text-decoration: underline; */
   text-underline-offset: 6px;
 }
 
 .contact-button {
-  background-color: #00ff99;
+  background-color: #00ff00;
   color: #1b1c1e;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  border: none;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Fira Code", monospace;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  border: #00ff00 solid 2px;
 }
 
-/* Responsive Design */
+.contact-button span {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color: transparent;
+  text-decoration: none;
+  border: #00ff00 solid 2px;
+}
+
+.contact-button:hover > span {
+  color: #00ff00;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

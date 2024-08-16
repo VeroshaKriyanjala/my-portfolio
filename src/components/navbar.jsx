@@ -24,7 +24,7 @@ class NavBar extends Component {
           </li>
           <li>
             <Link to="/contactme" className="contact-button">
-              Contact Me
+              <span>Contact Me</span>
             </Link>
           </li>
         </ul>

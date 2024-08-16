@@ -33,7 +33,7 @@
 }
 
 .technologies {
-  color: #00ff99;
+  color: #00ff00;
   font-family: "Fira Code", monospace;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -51,7 +51,7 @@
   width: 40px;
   height: 40px;
   background-color: #1b1c1e;
-  color: #00ff99;
+  color: #00ff00;
   border-radius: 50%;
   font-size: 1.5rem;
   text-decoration: none;
@@ -59,7 +59,7 @@
 }
 
 .work-links a:hover {
-  background-color: #00ff99;
+  background-color: #00ff00;
   color: #1b1c1e;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .carousel-controls button {
-  background-color: #00ff99;
+  background-color: #00ff00;
   border: none;
   color: #1b1c1e;
   padding: 5px 10px;
@@ -94,5 +94,5 @@
 
 .carousel-controls button:hover {
   background-color: #1b1c1e;
-  color: #00ff99;
+  color: #00ff00;
 }

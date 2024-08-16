@@ -11,7 +11,7 @@
 }
 
 .contact-form h2 {
-  color: #00ff99;
+  color: #00ff00;
   font-family: "Fira Code", monospace;
   font-size: 2rem;
 }
@@ -51,7 +51,7 @@ textarea {
 }
 
 button {
-  background-color: #00ff99;
+  background-color: #00ff00;
   border: none;
   color: #1b1c1e;
   padding: 10px 20px;
@@ -63,8 +63,8 @@ button {
 
 button:hover {
   background-color: #1b1c1e;
-  color: #00ff99;
-  border: 2px solid #00ff99;
+  color: #00ff00;
+  border: 2px solid #00ff00;
 }
 
 .contact-info {
@@ -92,7 +92,7 @@ button:hover {
 
 .contact-info i {
   font-size: 1.5rem;
-  color: #00ff99;
+  color: #00ff00;
 }
 
 .contact-info span {
