@@ -1,39 +1,20 @@
 import React, { useState } from "react";
+import Skills from "../../components/skills";
+import "./Resume.css";
 
 function Resume() {
-  const [activeSection, setActiveSection] = useState("Experience");
+  const [activeSection, setActiveSection] = useState("Skills");
 
   const renderContent = () => {
     switch (activeSection) {
-      case "Experience":
-        return (
-          <div>
-            <h2>My experience</h2>
-            <p>2022 - Present: Full Stack Developer at Tech Solutions Inc.</p>
-            <p>2021 - 2022: Freelance Web Developer</p>
-            <p>2020 - 2021: Front-End Developer Intern at Web Design Studio</p>
-            <p>2019 - 2020: Teaching Assistant at Tech Academy</p>
-          </div>
-        );
+      case "Skills":
+        return <Skills />;
       case "Education":
         return (
           <div>
             <h2>My education</h2>
             <p>Bachelor of Science in Computer Science - University Name</p>
             <p>High School Diploma - High School Name</p>
-          </div>
-        );
-      case "Skills":
-        return (
-          <div>
-            <h2>My skills</h2>
-            <ul>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>SQL</li>
-            </ul>
           </div>
         );
       case "AboutMe":
@@ -55,22 +36,16 @@ function Resume() {
     <div className="resume-container">
       <div className="left-menu">
         <button
-          onClick={() => setActiveSection("Experience")}
-          className={activeSection === "Experience" ? "active" : ""}
+          onClick={() => setActiveSection("Skills")}
+          className={activeSection === "Skills" ? "active" : ""}
         >
-          Experience
+          Skills
         </button>
         <button
           onClick={() => setActiveSection("Education")}
           className={activeSection === "Education" ? "active" : ""}
         >
           Education
-        </button>
-        <button
-          onClick={() => setActiveSection("Skills")}
-          className={activeSection === "Skills" ? "active" : ""}
-        >
-          Skills
         </button>
         <button
           onClick={() => setActiveSection("AboutMe")}

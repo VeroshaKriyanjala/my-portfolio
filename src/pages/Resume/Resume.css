@@ -1,6 +1,6 @@
 .resume-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px;
   color: aliceblue;
 }
