@@ -9,7 +9,6 @@ const projectsdata = [
     github_link: "#",
     image: "../assets/images.jpeg",
   },
-
   {
     id: 2,
     category: "App",

@@ -10,7 +10,11 @@ function Project({ project }) {
         <p>{project.description}</p>
         <p className="technologies">{project.technologies}</p>
         <div className="work-links">
-          <a href={project.github_link}>
+          <a
+            href={project.github_link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-github"></i>
           </a>
         </div>

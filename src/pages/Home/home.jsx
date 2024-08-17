@@ -19,17 +19,33 @@ function Home() {
         <div className="social-buttons">
           <button className="download-cv">Download CV</button>
           <div className="social-links">
-            <a href="https://github.com/VeroshaKriyanjala">
-              <i className="fa-brands fa-github"></i>
+            <a
+              href="https://github.com/VeroshaKriyanjala"
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+              <i className="fa-brands fa-github fa-2xl"></i>
             </a>
-            <a href="https://www.linkedin.com/in/verosha-kriyanjala">
-              <i className="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/verosha-kriyanjala"
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+              <i className="fa-brands fa-linkedin fa-2xl"></i>
             </a>
-            <a href="https://www.facebook.com/verosha.kriyanjala">
-              <i className="fa-brands fa-facebook"></i>
+            <a
+              href="https://www.facebook.com/verosha.kriyanjala"
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+              <i className="fa-brands fa-facebook fa-2xl"></i>
             </a>
-            <a href="mailto:veroshakeiuanjala32@gmail.com">
-              <i className="fa-solid fa-envelope"></i>
+            <a
+              href="mailto:veroshakeiuanjala32@gmail.com"
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+              <i className="fa-solid fa-envelope fa-2xl"></i>
             </a>
           </div>
         </div>
