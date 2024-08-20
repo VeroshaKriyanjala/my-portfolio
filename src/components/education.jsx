@@ -1,6 +1,6 @@
 import React from "react";
 import "./education.css";
-import Moratuwa from "../assets/moratuwa.jpg";
+// import Moratuwa from "../assets/moratuwa.jpg";
 
 function Education() {
   return (
