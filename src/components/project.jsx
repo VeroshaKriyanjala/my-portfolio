@@ -7,7 +7,7 @@ function Project({ project }) {
       <div className="project-details">
         <div className="project-number-outline"></div>
         <h2>{project.title}</h2>
-        <p>{project.description}</p>
+        <p className="project-description">{project.description}</p>
         <p className="technologies">{project.technologies}</p>
         <div className="work-links">
           <a

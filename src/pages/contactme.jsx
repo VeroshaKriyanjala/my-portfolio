@@ -1,5 +1,5 @@
 import React from "react";
-import "./contactme.css";
+// import "./contactme.css";
 
 function Contact() {
   return (
@@ -7,8 +7,10 @@ function Contact() {
       <div className="contact-form">
         <h2>Let's work together</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nescunt sit
-          illo esse commodi.
+          Whether you need a website, mobile app, or a striking design, I'm
+          ready to turn your ideas into reality. Let's collaborate and create
+          something exceptional together. I look forward to connecting with
+          you!"
         </p>
         <form
           action="https://send.pageclip.co/nQfJqWkJIOeVjd297F41qt8FBkAYBez7/contact-me"

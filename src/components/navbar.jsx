@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./navbar.css";
 
 class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeLink: "/home", // Set default active link
+      activeLink: "home",
+      menuOpen: false,
     };
   }
 
@@ -14,58 +15,74 @@ class NavBar extends Component {
     this.setState({ activeLink: link });
   };
 
+  toggleMenu = () => {
+    this.setState((prevState) => ({ menuOpen: !prevState.menuOpen }));
+  };
+
   render() {
-    const { activeLink } = this.state;
+    const { activeLink, menuOpen } = this.state;
 
     return (
       <nav className="navbar">
         <div className="brand">
-          <h1>...</h1>
+          <h1 className="menu-icon" onClick={this.toggleMenu}>
+            ...
+          </h1>
         </div>
-        <ul className="nav-links">
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
             <Link
-              to="/home"
-              className={activeLink === "/home" ? "active" : ""}
-              onClick={() => this.setActiveLink("/home")}
+              to="home"
+              smooth={true}
+              duration={300}
+              className={activeLink === "home" ? "active" : ""}
+              onClick={() => this.setActiveLink("home")}
             >
               Home
             </Link>
           </li>
           <li>
             <Link
-              to="/services"
-              className={activeLink === "/services" ? "active" : ""}
-              onClick={() => this.setActiveLink("/services")}
+              to="services"
+              smooth={true}
+              duration={300}
+              className={activeLink === "services" ? "active" : ""}
+              onClick={() => this.setActiveLink("services")}
             >
               Services
             </Link>
           </li>
           <li>
             <Link
-              to="/resume"
-              className={activeLink === "/resume" ? "active" : ""}
-              onClick={() => this.setActiveLink("/resume")}
+              to="resume"
+              smooth={true}
+              duration={300}
+              className={activeLink === "resume" ? "active" : ""}
+              onClick={() => this.setActiveLink("resume")}
             >
               Resume
             </Link>
           </li>
           <li>
             <Link
-              to="/work"
-              className={activeLink === "/work" ? "active" : ""}
-              onClick={() => this.setActiveLink("/work")}
+              to="work"
+              smooth={true}
+              duration={300}
+              className={activeLink === "work" ? "active" : ""}
+              onClick={() => this.setActiveLink("work")}
             >
               Work
             </Link>
           </li>
           <li>
             <Link
-              to="/contactme"
+              to="contactme"
+              smooth={false}
+              duration={300}
               className={`contact-button ${
-                activeLink === "/contactme" ? "active" : ""
+                activeLink === "contactme" ? "active" : ""
               }`}
-              onClick={() => this.setActiveLink("/contactme")}
+              onClick={() => this.setActiveLink("contactme")}
             >
               <span>Contact Me</span>
             </Link>

@@ -1,24 +1,32 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "./components/navbar";
-import Home from "./pages/Home/home";
-import Services from "./pages/Services/services";
-import Resume from "./pages/Resume/Resume";
-import Work from "./pages/Work/work";
-import ContactMe from "./pages/ContactMe/contactme";
+import { Element } from "react-scroll";
+import Home from "./pages/home";
+import Services from "./pages/services";
+import Resume from "./pages/Resume";
+import Work from "./pages/work";
+import ContactMe from "./pages/contactme";
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contactme" element={<ContactMe />} />
-      </Routes>
+      <Element name="home">
+        <Home />
+      </Element>
+      <Element name="services">
+        <Services />
+      </Element>
+      <Element name="resume">
+        <Resume />
+      </Element>
+      <Element name="work">
+        <Work />
+      </Element>
+      <Element name="contactme">
+        <ContactMe />
+      </Element>
     </Router>
   );
 }

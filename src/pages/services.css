@@ -1,9 +1,23 @@
+.service-main-container {
+  text-align: start;
+}
+
+.section-title {
+  font-family: "Fira Code", monospace;
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin-left: 50px;
+}
+
 .services-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   padding: 50px;
   color: aliceblue;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .service-item {

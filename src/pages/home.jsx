@@ -1,7 +1,7 @@
 import React from "react";
-import "./home.css";
+// import "./home.css";
 
-import profileImage from "../../assets/verosha.jpg";
+import profileImage from "../assets/verosha.jpg";
 
 function Home() {
   return (

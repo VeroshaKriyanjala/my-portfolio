@@ -1,18 +1,11 @@
 .skills-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
   background-color: #2d2d3a;
   border-radius: 5px;
-  gap: 40px;
-}
-
-.skills-section-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
   gap: 40px;
 }
 
@@ -38,4 +31,15 @@
 .skill-item span {
   font-size: 16px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    margin: 5px;
+  }
+
+  .skill-item img {
+    width: 60px;
+    height: 60px;
+  }
 }
