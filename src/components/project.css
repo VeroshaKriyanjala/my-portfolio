@@ -4,13 +4,13 @@
   padding: 20px;
   color: aliceblue;
   border-radius: 5px;
-  gap: 40px;
+  gap: 10px;
   background-color: #2d2d3a;
   margin-bottom: 10px;
 }
 
 .project-details {
-  width: 50%;
+  width: 60%;
 }
 
 .project-number-outline {
@@ -33,7 +33,15 @@
   font-family: "Fira Code", monospace;
   font-size: 1rem;
   margin-bottom: 20px;
+  text-align: justify;
+}
+
+.project-description {
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
   color: #aaaaaa;
+  text-align: justify;
 }
 
 .technologies {
@@ -69,7 +77,11 @@
 
 .work-image {
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  box-sizing: border-box;
 }
 
 .work-image img {
