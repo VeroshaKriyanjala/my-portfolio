@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Skills from "../components/skills";
 // import "./Resume.css";
 import Education from "../components/education";
+import Volunteering from "../components/volunteering";
 
 function Resume() {
   const [activeSection, setActiveSection] = useState("Skills");
@@ -12,18 +13,10 @@ function Resume() {
         return <Skills />;
       case "Education":
         return <Education />;
-      case "AboutMe":
+      case "Volunteering":
+        return <Volunteering />;
       default:
-        return (
-          <div>
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Name: Luke Coleman</p>
-            <p>Experience: 12+ Years</p>
-            <p>Nationality: American</p>
-            <p>Freelance: Available</p>
-          </div>
-        );
+        return <Skills />;
     }
   };
 
@@ -44,12 +37,12 @@ function Resume() {
           >
             Education
           </button>
-          {/* <button
-            onClick={() => setActiveSection("AboutMe")}
-            className={activeSection === "AboutMe" ? "active" : ""}
+          <button
+            onClick={() => setActiveSection("Volunteering")}
+            className={activeSection === "Volunteering" ? "active" : ""}
           >
-            About me
-          </button> */}
+            Volunteering
+          </button>
         </div>
         <div className="right-content">{renderContent()}</div>
       </div>
