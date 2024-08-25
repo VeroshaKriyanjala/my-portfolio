@@ -1,6 +1,8 @@
 import airline from "../assets/airline.png";
 import mangomap from "../assets/mangomap.png";
 import predictor from "../assets/predictor.png";
+import enigma from "../assets/enigma.png";
+import uxplora from "../assets/uxplora.png";
 
 const projectsdata = [
   {
@@ -41,6 +43,26 @@ const projectsdata = [
     technologies: "VHDL",
     github_link: "#",
     image: "../assets/images.jpeg",
+  },
+  {
+    id: 5,
+    category: "Web",
+    title: "Enigma 24",
+    description:
+      "As part of a team, we developed an 8-bit nano processor capable of performing addition, multiplication, and division. The processor design was implemented using FPGA technology, showcasing our skills in digital logic design and hardware development.",
+    technologies: "VHDL",
+    github_link: "#",
+    image: enigma,
+  },
+  {
+    id: 6,
+    category: "Web",
+    title: "Mora UXplora 2.0",
+    description:
+      "As part of a team, we developed an 8-bit nano processor capable of performing addition, multiplication, and division. The processor design was implemented using FPGA technology, showcasing our skills in digital logic design and hardware development.",
+    technologies: "VHDL",
+    github_link: "#",
+    image: uxplora,
   },
 ];
 
