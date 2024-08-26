@@ -1,5 +1,4 @@
 import React from "react";
-// import "./home.css";
 
 import profileImage from "../assets/verosha.jpg";
 

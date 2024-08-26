@@ -1,16 +1,25 @@
 import React from "react";
 import "./skills.css";
 
-import git from "../assets/git.png";
-import python from "../assets/python.png";
-import css from "../assets/css.png";
-import html from "../assets/html.png";
-import docker from "../assets/docker.png";
-import js from "../assets/js.png";
-import react from "../assets/react.png";
+import git from "../assets/Git.svg";
+import python from "../assets/python.svg";
+import css from "../assets/CSS3.svg";
+import html from "../assets/HTML5.svg";
+import js from "../assets/JavaScript.svg";
+import react from "../assets/react.svg";
 import mysql from "../assets/mysql.png";
-import nodejs from "../assets/nodejs.png";
-import flutter from "../assets/flutter.png";
+import nodejs from "../assets/node.svg";
+import flutter from "../assets/Flutter.svg";
+import mongodb from "../assets/Mongodb.svg";
+import boostrap from "../assets/Bootstrap.svg";
+import docker from "../assets/Docker.svg";
+import Figma from "../assets/Figma.svg";
+import pandas from "../assets/Pandas.svg";
+// import tailwind from "../assets/tailwind.svg";
+import vs from "../assets/VS.svg";
+import tensorflor from "../assets/TensorFlow.svg";
+import numpy from "../assets/NumPy.svg";
+import scikitlearn from "../assets/scikit-learn.svg";
 
 function Skills() {
   return (
@@ -40,10 +49,37 @@ function Skills() {
         <img src={python} alt="python"></img>
       </div>
       <div className="skill-item">
+        <img src={pandas} alt="pandas"></img>
+      </div>
+      {/* <div className="skill-item">
+        <img src={tailwind} alt="tailwind"></img>
+      </div> */}
+      <div className="skill-item">
+        <img src={vs} alt="VS Code"></img>
+      </div>
+      <div className="skill-item">
         <img src={docker} alt="docker"></img>
       </div>
       <div className="skill-item">
         <img src={flutter} alt="flutter"></img>
+      </div>
+      <div className="skill-item">
+        <img src={boostrap} alt="boostrap"></img>
+      </div>
+      <div className="skill-item">
+        <img src={mongodb} alt="mongodb"></img>
+      </div>
+      <div className="skill-item">
+        <img src={Figma} alt="figma"></img>
+      </div>
+      <div className="skill-item">
+        <img src={tensorflor} alt="tensorflor"></img>
+      </div>
+      <div className="skill-item">
+        <img src={numpy} alt="numpy"></img>
+      </div>
+      <div className="skill-item">
+        <img src={scikitlearn} alt="scikitlearn"></img>
       </div>
     </div>
   );
