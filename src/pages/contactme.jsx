@@ -1,5 +1,4 @@
 import React from "react";
-// import "./contactme.css";
 
 function Contact() {
   return (
@@ -51,7 +50,9 @@ function Contact() {
           <div className="iconboxes">
             <i className="fas fa-map-marker-alt"></i>
           </div>
-          <span>No 228/4, Rajamaha Vihara Mawatha, Getamanna</span>
+          <span>
+            No 228/4, Rajamaha Vihara Mawatha, Getamanna, Beliatta, Sri Lanka
+          </span>
         </div>
       </div>
     </div>

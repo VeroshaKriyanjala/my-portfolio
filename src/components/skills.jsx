@@ -15,7 +15,6 @@ import boostrap from "../assets/Bootstrap.svg";
 import docker from "../assets/Docker.svg";
 import Figma from "../assets/Figma.svg";
 import pandas from "../assets/Pandas.svg";
-// import tailwind from "../assets/tailwind.svg";
 import vs from "../assets/VS.svg";
 import tensorflor from "../assets/TensorFlow.svg";
 import numpy from "../assets/NumPy.svg";
